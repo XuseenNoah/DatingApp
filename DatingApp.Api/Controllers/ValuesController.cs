@@ -18,7 +18,7 @@ namespace DatingApp.Api.Controllers
         {
             _context = context;
         }
-
+        [AllowAnonymous]
         public async Task<List<Value>> get()
         {
             return await _context.Values.ToListAsync();
