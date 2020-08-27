@@ -21,6 +21,8 @@ export class NavComponent implements OnInit {
       this.model = {};
     }, error => {
       this.alertify.error("Invalid Login");
+      this.model = {};
+
     })
   }
 
